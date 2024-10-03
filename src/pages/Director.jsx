@@ -7,7 +7,7 @@ import director_img from "../assets/image/director_img.png";
 const Director = () => {
   return (
     <Section>
-      <Hero text="Empowering future through quality education.">Director</Hero>
+      <Hero text="Empowering future through quality education.">Director Message</Hero>
       <Msg
         title="Director Message"
         name="Mr. Gulfam Ahmad"

@@ -1,10 +1,8 @@
 import { Outlet } from "react-router-dom";
-
+import BscIT from "./BscIT";
 
 const Abouts = () => {
-  return (
-      <Outlet/>
-  );
+  return <Outlet />;
 };
 
 export default Abouts;

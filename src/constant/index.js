@@ -1,6 +1,12 @@
 import fy from "../assets/image/fy.webp";
 import sy from "../assets/image/sy.webp";
 import ty from "../assets/image/ty.webp";
+import staff_1 from "../assets/image/staff_1.jpg";
+import staff_2 from "../assets/image/staff_2.jpg";
+import staff_3 from "../assets/image/staff_3.jpg";
+import staff_4 from "../assets/image/staff_4.jpg";
+import staff_5 from "../assets/image/staff_5.jpg";
+import staff_6 from "../assets/image/staff_6.jpg";
 import arrow from "../assets/svg/arrow.svg";
 export const navigation = [
   { id: 6, title: "Home", url: "/" },
@@ -15,10 +21,14 @@ export const navigation = [
       { id: 3, title: "Our Staff", url: "/about/staff" },
     ],
   },
-  { id: 2, title: "Course", icon: arrow, url: "/admission" },
-  { id: 3, title: "Resources", url: "/notice" },
-  { id: 4, title: "Gallery", url: "/resources" },
-  { id: 5, title: "Contact", url: "/attendance" },
+  {
+    id: 2,
+    title: "Course",
+    url: "/course",
+  },
+  { id: 3, title: "Resources", url: "/resources" },
+  { id: 4, title: "Gallery", url: "/gallery" },
+  { id: 5, title: "Contact", url: "/contact" },
   // { id: 6, title: "Login", url: "/contact" },
   // { id: 7, title: "Registration", url: "/contact" },
 ];
@@ -99,6 +109,114 @@ export const collegeDetails = [
       "Gyanodaya  College shall impart education and instill respect for values, justice, equality, ethics, social sensitivity, gender sensitization, and environmental consciousness for the betterment of society and self through optimum utilization of available resources.",
   },
 ];
+
+export const bscITCourseDetails = [
+  {
+    id: 1,
+    title: "Duration",
+    content: "It is a Three-Year Undergraduate Course.",
+  },
+  {
+    id: 2,
+    title: "Fee Structure",
+    content: [
+      "The fee structure is as per Mumbai University norms.",
+      "Yearly Tuition Fee: ₹25,000/- per year (excluding exam and university fees).",
+      "Refundable Caution Money: ₹2,000/- (for the full course).",
+    ],
+    downloadLink: "path/to/fee-structure.pdf", // Replace with actual download path
+  },
+  {
+    id: 3,
+    title: "Admission Process",
+    content: [
+      "Online Application through the Mumbai University online portal.",
+      "No Entrance Examination for B.Sc. IT admissions in the 2024-25 session.",
+      "Eligibility: 12th Pass with minimum 45% for General/OBC category, 5% relaxation for SC/ST category.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Objectives of B.Sc. IT",
+    content: [
+      "To provide comprehensive IT education to build a strong foundation for aspiring professionals.",
+      "To develop students' technical and analytical skills in various IT domains like software development, data analysis, and networking.",
+      "To help students understand emerging technologies and prepare them to solve complex industry challenges.",
+      "To nurture innovation and creativity in students for developing cutting-edge IT solutions.",
+      "To prepare students for professional and research-oriented careers in the field of information technology.",
+      "To cultivate ethical, social, and professional values among future IT professionals.",
+    ],
+  },
+  // {
+  //   id: 5,
+  //   title: "Gallery",
+  //   content: "Complete gallery showcasing campus, labs, and student activities.",
+  //   galleryId: "308", // Example gallery ID
+  // },
+];
+
+export const bscItStaff = [
+  {
+    category: "Teaching Staff",
+    members: [
+      {
+        id: 1,
+        name: "Dr. Rajesh Kumar",
+        position: "Professor",
+        subject: "Database Management Systems",
+        image: staff_4,
+      },
+      {
+        id: 2,
+        name: "Ms. Priya Verma",
+        position: "Assistant Professor",
+        subject: "Web Development",
+        image: staff_2,
+      },
+      {
+        id: 3,
+        name: "Mr. Anil Singh",
+        position: "Lecturer",
+        subject: "Networking and Security",
+        image: staff_6,
+      },
+      {
+        id: 4,
+        name: "Ms. Neha Sharma",
+        position: "Assistant Professor",
+        subject: "Data Structures",
+        image: staff_1,
+      },
+    ],
+  },
+  {
+    category: "Non-Teaching Staff",
+    members: [
+      {
+        id: 1,
+        name: "Mr. Vinay Patil",
+        position: "Lab Assistant",
+        department: "Computer Lab",
+        image: staff_5,
+      },
+      {
+        id: 2,
+        name: "Ms. Lakshmi Iyer",
+        position: "Office Assistant",
+        department: "Administration",
+        image: staff_3,
+      },
+      {
+        id: 3,
+        name: "Mr. Suresh Gupta",
+        position: "IT Support",
+        department: "Technical Support",
+        image: staff_4,
+      },
+    ],
+  },
+];
+
 export const notices = [
   {
     title: "New Course Registration",
@@ -134,7 +252,7 @@ export const eventData = {
 
 export const dropDownDetails = {
   year: ["FY", "SY", "TY"],
-  date: ["2022", "2023", "2024"],
+  date: ["2024"],
   sem: ["Sem 1", "Sem 2"],
 };
 
@@ -665,3 +783,50 @@ export const mockData = {
     // More years...
   },
 };
+export const testimonials = [
+  {
+    id: 1,
+    name: "John Doe",
+    testimonialText:
+      "This course has exceeded my expectations. The faculty members are incredibly supportive and the resources are top-notch.",
+  },
+  {
+    id: 2,
+    name: "Sarah Smith",
+    testimonialText:
+      "The hands-on approach in this program was exactly what I needed. It gave me the skills to succeed in the IT industry.",
+  },
+  {
+    id: 3,
+    name: "Amit Patel",
+    testimonialText:
+      "The learning experience here has been incredible. The combination of theoretical and practical knowledge prepared me well.",
+  },
+  {
+    id: 4,
+    name: "Neha Sharma",
+    testimonialText:
+      "The support from the teaching staff was remarkable. They provided guidance and motivation, helping me achieve great results.",
+  },
+];
+export const upComingEvents = [
+  {
+    id: 1,
+    name: "React Workshop",
+    description: "Learn the basics of React.js in this interactive workshop.",
+    startTime: new Date("2024-10-05T10:00:00"),
+    endTime: new Date("2024-10-05T12:00:00"),
+  },
+];
+
+export const gallery = [
+  { id: 1, img: staff_1 },
+  { id: 2, img: staff_2 },
+  { id: 3, img: staff_3 },
+  { id: 4, img: staff_4 },
+  { id: 5, img: staff_5 },
+  { id: 6, img: staff_6 },
+  { id: 7, img: staff_1 },
+  { id: 8, img: staff_2 },
+  { id: 9, img: staff_3 },
+];

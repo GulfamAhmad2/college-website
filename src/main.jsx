@@ -17,6 +17,7 @@ import Abouts from "./pages/Abouts.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Principal from "./pages/Principal.jsx";
 import Staff from "./pages/Staff.jsx";
+import BscIT from "./pages/BscIT.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,8 +40,8 @@ const router = createBrowserRouter([
         ]
       },
       {
-        path: "/admission",
-        element: <Admissions />,
+        path: "/course",
+        element: <BscIT />,
       },
       {
         path: "/faculty",

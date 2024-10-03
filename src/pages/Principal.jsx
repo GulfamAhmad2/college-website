@@ -7,9 +7,9 @@ import Msg from "../components/Msg";
 const Principal = () => {
   return (
     <Section>
-      <Hero text="Empowering future through quality education.">Director</Hero>
+      <Hero text="Empowering future through quality education.">Principal Message</Hero>
       <Msg
-        title="Principle Message"
+        title="Principal Message"
         name="Mr. cb here"
         img={director_img}
         text="A teacher’s job is most challenging and most rewarding profession. A teacher has to be a counselor, mentor, friend ,surrogate parent, disciplinarian, learning disabilities specialist, motivational speaker, cultural torch bearer and coach as well as a master of his/her subject matter. A teacher is asked to package his/her lessons in creative and dynamic ways to hold the attention of a large group as well as tailor his/her teaching to individual student with a myriad of different learning styles. We at Gyanodaya Mahavidhyalaya strive towards igniting minds and creating in students a passion For learning and continuous development by making the learning process enjoyable. We are determined to impart values, ethics and self confidence and harness students’ free potential besides increasing the professional development of the student teachers’ with a belief that the true goal of education is holistic development.

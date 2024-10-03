@@ -80,7 +80,7 @@ const NavItem = ({ item }) => {
       </Link>
 
       {item.child && (
-        <ul className="absolute hidden group-hover:block bg-color-1 p-2 text-nowrap border-t-2 border-color-3">
+        <ul className="absolute hidden group-hover:block bg-color-1 p-2 w-[130px]  text-nowrap border-t-2 border-color-3">
           {item.child.map((childItem) => (
             <NavItem key={childItem.id} item={childItem} />
           ))}

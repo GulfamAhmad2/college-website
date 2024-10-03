@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { mockData, dropDownDetails } from "../constant";
 import Hero from "../components/Hero";
+import Section from "../components/Section";
 
 const Resources = () => {
   const [selectedYear, setSelectedYear] = useState("FY");
@@ -30,9 +31,10 @@ const Resources = () => {
   };
 
   return (
-    <div className="pt-[80px]">
-    <Hero>Resources</Hero>
-      <div className="pt-[40px] px-6 bg-[#f8f9fa] min-h-screen">
+    <Section>
+    <Hero text="Empowering future through quality education.">Download Resources</Hero>
+
+      <div className="pt-[40px]">
       
 
       {/* Dropdowns in a row */}
@@ -62,19 +64,20 @@ const Resources = () => {
       <div className="mt-6">
         {data.length > 0 ? (
           data.map((subject, index) => (
-            <div key={index} className="mb-6 p-4 border border-[#050d2d] rounded-lg bg-white shadow-md">
+            <div key={index} className="mb-6 p-4 border border-color-1 rounded-lg bg-white shadow-md">
               {/* Subject and toggle button */}
               <div className="flex justify-between items-center">
                 <a
                   href={subject.subjectName}
                   target="_blank"
-                  className="text-xl font-semibold text-[#050d2d] hover:underline"
+                  className="text-xl font-semibold text-color-1 hover:underline"
                 >
                   {subject.subjectName}
+                  
                 </a>
                 <button
                   onClick={() => toggleNotes(index)}
-                  className="bg-[#050d2d] text-white px-3 py-1 rounded hover:bg-opacity-80"
+                  className="bg-color-1 text-color-4 px-3 py-1 rounded hover:bg-opacity-80"
                 >
                   {showNotes[index] ? "Hide Notes" : "Show Notes"}
                 </button>
@@ -88,7 +91,7 @@ const Resources = () => {
                       <a
                         href={note.url}
                         target="_blank"
-                        className="text-[#050d2d] hover:underline"
+                        className="text-color-1 hover:underline"
                       >
                         {note.title}
                       </a>
@@ -96,7 +99,7 @@ const Resources = () => {
                       <a
                         href={note.url}
                         download
-                        className="bg-[#050d2d] text-white px-3 py-1 rounded hover:bg-opacity-80"
+                        className="bg-color-1 text-color-4 px-3 py-1 rounded hover:bg-opacity-80"
                       >
                         Download
                       </a>
@@ -111,7 +114,7 @@ const Resources = () => {
         )}
       </div>
     </div>
-    </div>
+    </Section>
     
   );
 };
@@ -121,11 +124,11 @@ export default Resources;
 const Dropdown = ({ label, options, value, onChange }) => {
   return (
     <div className="mb-4 w-full sm:w-auto">
-      <label className="text-lg font-medium text-[#050d2d]">{label}</label>
+      <label className="text-lg font-medium text-color-1">{label}</label>
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="ml-2 p-2 border border-[#050d2d] rounded focus:outline-none focus:ring-2 focus:ring-[#050d2d] bg-white text-[#050d2d] cursor-pointer w-full sm:w-auto"
+        className="ml-2 p-2 border border-color-1 rounded focus:outline-none focus:ring-2 focus:ring-[#050d2d] bg-white text-color-1 cursor-pointer w-full sm:w-auto"
       >
         {options.map((option, index) => (
           <option key={index} value={option}>
